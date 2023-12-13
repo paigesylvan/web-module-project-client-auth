@@ -1,5 +1,11 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .App-logo {
@@ -13,17 +19,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +30,178 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 160px;
+  width: 75%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+}
+
+.link {
+  padding: 10px 20px;
+  border: solid black 1px;
+  margin: 0 10px;
+  color: white;
+  background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+#title {
+  padding: 10px 20px;
+  margin: 20px 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+}
+
+/* [x] LOGIN PAGE */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 300px;
+  font-size: 1.3rem;
+  height: fit-content;
+  margin-top: 50px;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  margin: 20px 0;
+}
+.password {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  margin: 20px 0;
+}
+
+#username {
+  margin: 10px 0;
+  padding: 10px 0px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+#password {
+  margin: 10px 0;
+  padding: 10px 0px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+#login {
+  width: 75%;
+  margin: 10px 0;
+  padding: 10px 0px;
+  color: white;
+  background-color: black;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+label {
+  text-align: left;
+}
+
+/* [x] FRIENDS LIST */
+
+.friendsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  font-size: 1.3rem;
+  height: fit-content;
+  margin-top: 50px;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+ul {
+  padding: 0;
+}
+
+/* [x] ADD FRIEND */
+.addFriend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 300px;
+  font-size: 1.3rem;
+  height: fit-content;
+  margin-top: 50px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  margin: 20px 0;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  margin: 20px 0;
+}
+
+#name {
+  margin: 10px 0;
+  padding: 10px 0px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+#email {
+  margin: 10px 0;
+  padding: 10px 0px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+#addFriend {
+  width: 75%;
+  margin: 10px 0;
+  padding: 10px 0px;
+  color: white;
+  background-color: black;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
